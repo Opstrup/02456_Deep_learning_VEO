@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
-import utils 
+import utils
 from BatchLoader2 import BatchLoader2 as BatchLoader
 from datetime import datetime
 
@@ -214,7 +214,7 @@ def experiment(hype=[3,'same',[8,3,3],[(7,7),(5,5),(3,3)],[(3,3),(3,3),(5,5)],[(
     #Reset graph before building
     tf.reset_default_graph()
     #set up batch handler
-    batchHandler = BatchLoader(dataset_folder_path="synthetic2_128x128", batch_size=BATCH_SIZE, keep_green=True, expand_dims=False)
+    batchHandler = BatchLoader(dataset_folder_path="../synthetic2_128x128", batch_size=BATCH_SIZE, keep_green=True, expand_dims=False)
     with tf.name_scope('input'):
         x_pl = tf.placeholder(tf.float32, [None, HEIGHT, WIDTH, NUMBER_CHANNELS], name='ImagePlaceholder')
     with tf.name_scope('output'):
