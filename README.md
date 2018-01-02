@@ -19,14 +19,20 @@ root
     └── file2.py
 ```
 ## Dependencies
+
 * Python 3.6
 * Tensorflow 1.4
 * numpy
 * PIL
 
-## How to replicate results
+## How to replicate results (ball_noball)
 
 1. Run getdata.py in root get download dataset
+2. 
+
+## How to replicate results (transfer learning)
+
+1. What to do here?
 2. 
 
 ## How to train the model and compare with provided results
