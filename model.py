@@ -309,9 +309,9 @@ def experiment(hype=[3,'same',[8,3,3],[(7,7),(5,5),(3,3)],[(3,3),(3,3),(5,5)],[(
             pass
 
 def main():
-	#Todo setup hyper parameter generation
+    #Todo setup hyper parameter generation
     experiment(ntype=1,savename="avgpool")
-    #experiment(ntype=2,savename="default")
+    experiment(ntype=2,savename="default")
     experiment(ntype=3,savename="TAX")
 if __name__ == '__main__':
     main()
