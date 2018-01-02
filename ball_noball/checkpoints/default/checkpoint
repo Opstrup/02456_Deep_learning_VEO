@@ -1,0 +1,6 @@
+model_checkpoint_path: "final_default_2_150.0.ckpt"
+all_model_checkpoint_paths: "final_default_2_146.0.ckpt"
+all_model_checkpoint_paths: "final_default_2_147.0.ckpt"
+all_model_checkpoint_paths: "final_default_2_148.0.ckpt"
+all_model_checkpoint_paths: "final_default_2_149.0.ckpt"
+all_model_checkpoint_paths: "final_default_2_150.0.ckpt"
