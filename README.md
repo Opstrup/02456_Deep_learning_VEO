@@ -15,8 +15,28 @@ root
 │   ├── model.py
 │   └── Network Experiment.ipynb
 └── transfer_learning
-    ├── file1.py
-    └── file2.py
+    ├── data
+    │    └── class.pbtxt
+    ├── Frozen_state_rcnn
+    │   ├── saved_model
+    │   │   ├── variables
+    │   │   └── saved_model.pb
+    │   ├── checkpoint
+    │   ├── frozen_inference_graph.pb
+    │   ├── model.ckpt.data-00000-of-00001
+    │   ├── model.ckpt.index
+    │   └── model.ckpt.meta
+    ├── models
+    │   └── rcnn
+    │   │   ├── train
+    │   │   ├── model.ckpt.data-00000-of-00001
+    │   │   ├── model.ckpt.index
+    │   │   └── model.ckpt.meta
+    ├── create_csv2.py
+    ├── export_inference_graph.py
+    ├── faster_rcnn_inception_v2_coco.config
+    ├── generate_tfrecord.py
+    └── train.py
 ```
 ## Dependencies
 
