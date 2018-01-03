@@ -7,13 +7,17 @@ root
 ├── getdata.py (download synthetic dataset)
 ├── provided_project (initial provided code)
 │   ├── getdata.sh
-│   ├── utils.py (utility file provided in lectures)
 │   ├── ballnoball.py
 │   └── README.md
 ├── ball_noball
+│   ├── checkpoints (saved models)
+│   ├── summaries (tensorboard summaries)
+│   ├── sample_validation (sample validation images)
 │   ├── BatchLoader2.py
-│   ├── model.py
-│   └── Network Experiment.ipynb
+│   ├── utils.py (utility file provided in lectures)
+│   ├── model.py (script run on AWS for training the models)
+│   ├── Network_testing.ipynb (Loading a checkpoint and running some sample validation images)
+│   └── Network_training.ipynb (Jupyter version of training script)
 └── transfer_learning
     ├── data
     │    └── class.pbtxt
@@ -48,7 +52,12 @@ root
 ## How to replicate results (ball_noball)
 
 1. Run getdata.py in root get download dataset
-2. 
+(Training:)
+2. Run Network_training.ipynb
+(Checking validation images:)
+3. Run Network_testing.pynb
+
+Summaries are located in ball_noball/summaries
 
 ## How to replicate results (transfer learning)
 
