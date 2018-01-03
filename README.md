@@ -52,9 +52,13 @@ root
 ## How to replicate results (ball_noball)
 
 1. Run getdata.py in root get download dataset
+
 (Training:)
+
 2. Run Network_training.ipynb
+
 (Checking validation images:)
+
 3. Run Network_testing.pynb
 
 Summaries are located in ball_noball/summaries
