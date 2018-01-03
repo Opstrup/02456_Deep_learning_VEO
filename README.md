@@ -61,8 +61,17 @@ Summaries are located in ball_noball/summaries
 
 ## How to replicate results (transfer learning)
 
-1. What to do here?
-2. 
+1. Follow the step from  https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+   to install the needed dependencies for Tensorflow object detection api.
+2. Use create_csv2.py to create two csv files. One for the traning images and one for testing.
+3. Use generate_tfrecord.py to make TFrecords from the csv and images.
+4. Select the wanted model from models in transfer learning
+5. Modify the config file that match the model, such that: fine_tune_checkpoint point to the model checkpoint. input_path in train_input_reader point to train TFrecord
+   and input_path in eval_input_reader points to test TFrecord. All label_map_path point to class.pbtxt.
+6. Run train.py by telling it where training directory and config file is.
+7. When sufficient trained use export_inference_graph.py to extract a frozen state from the training checkpoints.
+8. Use either custom_rcnn_object_detection.ipynb or custom_ssd_object_detection.ipynb to run the created frozen state. (Remember to modify the location of the model and images in the ipynb).
+
 
 ## How to train the model and compare with provided results
 
