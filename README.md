@@ -17,7 +17,7 @@ root
 │   ├── utils.py (utility file provided in lectures)
 │   ├── model.py (script run on AWS for training the models)
 │   ├── Network_testing.ipynb (Loading a checkpoint and running some sample validation images)
-│   └── Network_testing.ipynb (Jupyter version of training script)
+│   └── Network_training.ipynb (Jupyter version of training script)
 └── transfer_learning
     ├── data
     │    └── class.pbtxt
@@ -52,7 +52,12 @@ root
 ## How to replicate results (ball_noball)
 
 1. Run getdata.py in root get download dataset
-2. 
+(Training:)
+2. Run Network_training.ipynb
+(Checking validation images:)
+3. Run Network_testing.pynb
+
+Summaries are located in ball_noball/summaries
 
 ## How to replicate results (transfer learning)
 
