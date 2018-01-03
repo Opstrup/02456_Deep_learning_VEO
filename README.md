@@ -14,7 +14,6 @@ root
 │   ├── summaries (tensorboard summaries)
 │   ├── sample_validation (sample validation images)
 │   ├── BatchLoader2.py
-│   ├── BatchLoader2.py
 │   ├── utils.py (utility file provided in lectures)
 │   ├── model.py (script run on AWS for training the models)
 │   ├── Network_testing.ipynb (Loading a checkpoint and running some sample validation images)
